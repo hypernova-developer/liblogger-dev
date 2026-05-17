@@ -91,3 +91,6 @@ The engine filters log outputs across four clear, explicit tiers to optimize ana
 
 ## Project Philosophy
 Part of the hypernova-developer library development ecosystem. Engineered with the mindset of: *First small components, then complete ecosystems.*
+
+## Licensing
+This project is protected under the **GNU GPL v3.0 License**. All rights reserved by **hypernova-developer**.
