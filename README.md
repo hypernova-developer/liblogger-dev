@@ -54,3 +54,29 @@ private:
 #endif
 ```
 ## Quick Start & Integration
+## Quick Start & Integration
+
+### 1. Include and Initialize
+Drop `betterlogger.hpp` into your project directory. Instantiating the class will automatically initialize the asynchronous logger and start the internal worker thread.
+
+```cpp
+#include "betterlogger.hpp"
+
+int main()
+{
+    Logger logger("system.log");
+
+    logger.log(LogLevel::INFO, "System initialized successfully.");
+    logger.log(LogLevel::WARNING, "Testing asynchronous boundary limits.");
+    logger.log(LogLevel::ERROR, "Simulated runtime error handled safely.");
+    logger.log(LogLevel::CRITICAL, "System execution context verification required.");
+
+    return 0;
+}
+```
+
+### 2. Compileation
+Compile using any standard C++11 or higher compliant compiler with threading support enabled:
+```bash
+g++ -std=c++11 main.cpp -o system_logger -lpthread
+```
