@@ -75,7 +75,7 @@ int main()
 }
 ```
 
-### 2. Compileation
+### 2. Compilaation
 Compile using any standard C++11 or higher compliant compiler with threading support enabled:
 ```bash
 g++ -std=c++11 main.cpp -o system_logger -lpthread
