@@ -80,3 +80,14 @@ Compile using any standard C++11 or higher compliant compiler with threading sup
 ```bash
 g++ -std=c++11 main.cpp -o system_logger -lpthread
 ```
+
+## Severity Levels
+
+The engine filters log outputs across four clear, explicit tiers to optimize analysis profiles:
+- `INFO` : Standard operational feedback data.
+- `WARNING` : Non-critical deviations requiring review.
+- `ERROR` : Runtime failures causing partial data degradation.
+- `CRITICAL` : Immediate failures threatening system thread execution context stability.
+
+## Project Philosophy
+Part of the hypernova-developer library development ecosystem. Engineered with the mindset of: *First small components, then complete ecosystems.*
